@@ -20,7 +20,6 @@ struct ContentView: View {
     @State private var enoughCredits = true
     
     private var betAmount = 5
-    private var extraBetAmount = 50
     
     var body: some View {
         ZStack {
@@ -215,7 +214,7 @@ struct ContentView: View {
     //Check Credits Amount
     func checkCredits(){
         
-        if credits < extraBetAmount {
+        if credits < betAmount*5 {
             enoughCreditsX10 = false
         }
         
