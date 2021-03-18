@@ -16,7 +16,7 @@ struct ContentView: View {
     
     @State private var credits = 1000
     
-    @State private var enoughCreditsX10 = true
+    @State private var enoughCreditsX5 = true
     @State private var enoughCredits = true
     
     private var betAmount = 5
